@@ -44,8 +44,8 @@
 #define I2C_FLAG_WRITE	0
 #define I2C_FLAG_READ	1
 
-int APDS9930_CMM_PPCOUNT_VALUE = 0x08;
-int APDS9930_CMM_CONTROL_VALUE = 0xE4;
+int APDS9930_CMM_PPCOUNT_VALUE = 0x0C;
+int APDS9930_CMM_CONTROL_VALUE = 0x20;
 int ZOOM_TIME = 4;
 unsigned int alsps_int_gpio_number;
 struct platform_device *alspsPltFmDev;
