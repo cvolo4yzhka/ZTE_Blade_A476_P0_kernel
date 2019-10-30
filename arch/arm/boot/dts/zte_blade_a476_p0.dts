@@ -6,7 +6,7 @@
 #include "mt6735m-pinfunc.h"
 #include <dt-bindings/mmc/mt67xx-msdc.h>
 #else
-#include "zte_mt6735m.dts"
+#include "mt6735m.dts"
 #endif
 
 &cpus {
