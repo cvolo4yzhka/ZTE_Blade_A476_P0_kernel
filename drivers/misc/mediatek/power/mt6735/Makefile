@@ -40,7 +40,10 @@ else
                     ifeq ($(CONFIG_MTK_BQ24296_SUPPORT),y)
                          obj-$(CONFIG_MTK_SMART_BATTERY) += bq24296.o charging_hw_bq24296.o
                     else
-                         ifeq ($(CONFIG_MTK_BQ24158_SUPPORT),y)
+                         ifeq ($(CONFIG_MTK_FAN5405_SUPPORT),y)
+                             obj-$(CONFIG_MTK_SMART_BATTERY) += fan5405.o charging_hw_fan5405.o
+			else
+                      ifeq ($(CONFIG_MTK_BQ24158_SUPPORT),y)
                              obj-$(CONFIG_MTK_SMART_BATTERY) += bq24158.o charging_hw_bq24158.o
                          else
                               ifeq ($(CONFIG_MTK_RT9536_SUPPORT),y)
@@ -49,6 +52,7 @@ else
                                   obj-$(CONFIG_MTK_SMART_BATTERY) += charging_hw_pmic.o
                               endif
                          endif
+			endif
                     endif
                endif
           endif

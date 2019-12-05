@@ -113,7 +113,6 @@
 /* SENSOR CHIP VERSION */
 /*A476*/
 #define T4KA3MIPI_SENSOR_ID                     0x1490
-#define OV5670MIPI_SENSOR_ID                    0x5670
 /*A476*/
 /*IMX*/
 #define IMX398_SENSOR_ID                        0x0398
@@ -162,6 +161,8 @@
 #define OV7675_SENSOR_ID                        0x7673
 #define OV5693_SENSOR_ID                        0x5690
 #define OV5693_SENSOR_ID_2                  (0x5690+10000)
+#define OV5670MIPI_SENSOR_ID                    0x5670
+#define OV5670MIPI_SENSOR_ID_2                  (0x5670+010000)
 #define OV5675MIPI_SENSOR_ID                    0x5675
 #define OV5671MIPI_SENSOR_ID                    0x5671
 #define OV5650_SENSOR_ID                        0x5651
@@ -311,7 +312,6 @@
 /* SENSOR DEVICE DRIVER NAME */
 /*A476*/
 #define SENSOR_DRVNAME_T4KA3_MIPI_RAW           "t4ka3mipiraw"
-#define SENSOR_DRVNAME_OV5670_MIPI_RAW          "ov5670mipiraw"
 /*A476*/
 /*IMX*/
 #define SENSOR_DRVNAME_IMX398_MIPI_RAW          "imx398mipiraw"
@@ -356,6 +356,8 @@
 #define SENSOR_DRVNAME_OV7675_YUV               "ov7675yuv"
 #define SENSOR_DRVNAME_OV5693_MIPI_RAW          "ov5693mipiraw"
 #define SENSOR_DRVNAME_OV5693_MIPI_RAW_2          "ov5693mipiraw2"
+#define SENSOR_DRVNAME_OV5670_MIPI_RAW          "ov5670mipiraw"
+#define SENSOR_DRVNAME_OV5670_MIPI_RAW_2        "ov5670mipiraw2"
 #define SENSOR_DRVNAME_OV5671_MIPI_RAW          "ov5671mipiraw"
 #define SENSOR_DRVNAME_OV5647MIPI_RAW           "ov5647mipiraw"
 #define SENSOR_DRVNAME_OV5645_MIPI_YUV          "ov5645_mipi_yuv"

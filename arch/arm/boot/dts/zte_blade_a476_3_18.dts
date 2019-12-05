@@ -99,7 +99,7 @@
 	};
 	led5:led@5 {
 		compatible = "mediatek,button-backlight";
-		led_mode = <2>;
+		led_mode = <0>;
 		data = <60>;
 		gpio = <&pio 60 0>;
 		pwm_config = <0 0 0 0 0>;
@@ -628,5 +628,5 @@
 };
 /* USB GPIO Kernal Standardization end */
 
-#include <zte_blade_a476_p0/cust.dtsi>
+#include <zte_blade_a476_3_18/cust.dtsi>
 /*End of this file, DO NOT ADD ANYTHING HERE*/
