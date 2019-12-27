@@ -281,7 +281,7 @@ static int check_otp_wb(int index)
 static int read_otp_info(int index, struct otp_struct *otp_ptr)
 {
 		int i;
-		int start_addr, end_addr;
+		int start_addr = 0x7011, end_addr = 0x7015;
 		//set 0x5002[3] to 0
 		int temp1;
 		
